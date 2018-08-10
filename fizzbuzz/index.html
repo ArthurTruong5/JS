@@ -1,0 +1,43 @@
+<!-- Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FizzBuzz</title>
+    <script src="function.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+<center>
+<div id="demo"></div>
+</center>
+
+
+<script>
+
+var i = 0
+
+while (i < 100) {
+  i++;
+  if (i % 3 == 0 && i % 5 == 0) {
+    document.write(i + ". FizzBuzz <br>");
+  } else if (i % 3 == 0){
+    document.write(i + ". Fizz <br>");
+  } else if (i % 5 == 0) {
+    document.write(i + ". Buzz <br>");
+  }
+  else {
+    document.write(i + ". <br>")
+  }
+}
+
+
+
+</script>
+
+
+
+<script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
