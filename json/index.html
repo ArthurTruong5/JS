@@ -1,16 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Test</title>
-  </head>
-  <body>
 
-<div id="demo"></div>
+<head>
+  <meta charset="utf-8">
+  <title>Test</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
 
-<div id="sun"></div>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<script src="main.js" charset="utf-8"></script>
-<script src="bundle.js"></script>
-  </body>
+  <div class="parallax-container">
+  <div class="parallax"><img src="../images/parallax/parallax-bg.jpg"></div>
+  <div class="col s12 m3">
+      <div class="card-content white-text">
+
+        <span class="card-title">
+        <h4><div id="weather"></div></h4>
+        <h4><div id="sun"></div></h4>
+        <h4><div id="day"></div></h4>
+        <h4><div id="high"></div></h4>
+        <h4><div id="low"></div></h4>
+
+      </span>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+<script>
+
+$(document).ready(function(){
+  $('.parallax').parallax();
+});
+
+</script>
+  <script src="main.js" charset="utf-8"></script>
+  <script src="bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+</body>
+
 </html>

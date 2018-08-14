@@ -6,12 +6,19 @@ request('https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather
 
   var weatherApi = (body.split(",").slice(1));
 
-  var sunSet = (body.split(",")[49].slice(8));
+  var sunSet = (body.split(",")[49].slice(8,-1));
+  var daySet = (body.split(",")[50].slice(7,-1));
+  var highSet = (body.split(",")[51].slice(8,-1));
+  var lowSet = (body.split(",")[52].slice(7,-1));
+  var weatherSet = (body.split(",")[53].slice(8,-2));
 
   console.log(weatherApi);
 
-  document.getElementById('demo').innerHTML = (weatherApi);
-  document.getElementById('sun').innerHTML = (sunSet);
+  document.getElementById('sun').innerHTML = "Current Date: " + (sunSet);
+  document.getElementById('day').innerHTML = "Current Day: " + (daySet);
+  document.getElementById('high').innerHTML = "Highest Today: " + (highSet);
+  document.getElementById('low').innerHTML = "Lowest Today: " + (lowSet);
+  document.getElementById('weather').innerHTML = "Weather Today: " + (weatherSet);
 
 });
 
