@@ -1,0 +1,29 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+
+      function callback() {
+        console.log("CALLBACK : EXECUTED AFTER 3 seconds");
+      }
+
+      function waitThreeSecond(callback) {
+          var waitTimer = 3000 + new Date().getTime()
+          while(new Date() < waitTimer){
+
+          }
+          setTimeout(callback();
+      },0)
+
+       // call the long running function
+       waitThreeSecond(callback);
+
+      function clickHandler(){
+        console.log("click event registered");
+      }
+
+      document.addEventListener('click', clickHandler);
+
+    </script>
+  </body>
+</html>

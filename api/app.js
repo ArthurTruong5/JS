@@ -67,4 +67,4 @@ var jsonTest =  {
    "status" : "OK"
 }
 
-console.log(jsonTest.results[0].plus_code)
+console.log(jsonTest)
