@@ -1,0 +1,23 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <script>
+      console.log("The batter information is as follows")
+      navigator.getBattery()
+        .then(function(result) {
+          console.log(result)
+        }).catch(function(err) {
+        console.log("something went wrong");
+      });
+
+      fetch("https://randomuser.me/api")
+        .then(function(result) {
+          console.log(result);
+        })
+        .catch(function(err) {
+          console.log(err);
+        })
+    </script>
+  </body>
+</html>
