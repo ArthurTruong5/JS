@@ -21,4 +21,4 @@ myFunc();
 // 5. var name = "Mozilla" will be stored within the execution stack 1
 // 6. JS will see return and it will POP OFF the execution stack. The function will send the return value back to the calling context. The calling context is the execution context that called the function.
 // 7. displayName is invoked
-// 8. console.log(name) is return, name will then need to be defined. JS will perfirm lexical scoping. Name is not find within the execution stack and will then search within the parent stack. Name is found in the outer environment of makeFunc.
+// 8. console.log(name) is return, name will then need to be defined. JS will perfirm lexical scoping. Name is not find within the execution stack and will then search within the parent stack. Name is found in the outer environment of makeFunc which is Mozilla.
