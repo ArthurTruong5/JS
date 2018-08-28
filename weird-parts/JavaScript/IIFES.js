@@ -32,3 +32,10 @@ var firstname = 'John';
   var greeting = 'Inside IIFE: Hello';
   console.log(greeting + ' ' + name);
 }(firstname)); // IIFE
+
+// How to pass it onto the global object
+
+(function(global,name){
+  var greeting = 'Inside IIFE: Hello';
+  console.log(greeting + ' ' + name);
+}(window,firstname)); // IIFE
