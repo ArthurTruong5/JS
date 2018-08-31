@@ -1,50 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html class="full-height" lang="en-US">
 
 <head>
-  <meta charset="utf-8">
-  <title>RealSpec</title>
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Material Landing</title>
+  <meta name="description" content="Material design landing page template built by TemplateFlip.com" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="top">
+  <header>
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" id="navbar">
+      <div class="container"><a class="navbar-brand" href="#"><strong>RealTravel</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="btn btn-primary btn-rounded my-1" href="#sydneyAunction" target="_blank">Sydney</a></li>
+            <li class="nav-item"><a class="btn btn-primary btn-rounded my-1" href="#demo" target="_blank">Melbourne</a></li>
+            <li class="nav-item"><a class="btn btn-primary btn-rounded my-1" href="#demo" target="_blank">Canberra</a></li>
+            <li class="nav-item"><a class="btn btn-primary btn-rounded my-1" href="#demo" target="_blank">Adelaide</a></li>
+            <li class="nav-item"><a class="btn btn-primary btn-rounded my-1" href="#demo" target="_blank">Brisbane</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Intro Section-->
+    <section class="view hm-gradient" id="intro">
+      <div class="full-bg-img d-flex align-items-center">
+        <div class="container">
+          <div class="row no-gutters">
+            <div class="col-md-10 col-lg-6 text-center text-md-left margins">
+              <div class="white-text">
+                <div class="wow fadeInLeft" data-wow-delay="0.3s">
+                  <h1 class="h1-responsive font-bold mt-sm-5">Find. Plan. Decide.</h1>
+                  <div class="h6">
+                    Renters and house buyers are not sure how much they will save by moving to a different area because of the difference in commute time and public transport costs. We solve that problem by comparing potential surburbs and the cost difference. We help you
+                    plan for your future.
+                  </div>
+                </div><br>
+                <div class="wow fadeInLeft" data-wow-delay="0.3s"><a class="btn btn-white dark-grey-text font-bold ml-0" href="https://www.youtube.com/watch?v=60ItHLz5WEA" target="_blank"><i class="fa fa-plane mr-1"></i> Find Cost vs Travel Time</a><a class="btn btn-outline-white" href="#">Learn more</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
 
-  <nav>
-   <div class="nav-wrapper">
-     <a href="#!" class="brand-logo">RealSpec</a>
-     <ul class="right hide-on-med-and-down">
-       <li><a class="waves-effect waves-light btn">Sydney<i class="material-icons right">card_travel</i></a></li>
-       <li><a class="waves-effect waves-light btn">Melbourne<i class="material-icons right">airplanemode_active</i></a></li>
-       <li><a class="waves-effect waves-light btn">Canberra<i class="material-icons right">airport_shuttle</i></a></li>
-     </ul>
-   </div>
- </nav>
+  <section class="py-5" id="projects">
+    <div class="container">
+      <div class="wow fadeIn">
+        <h2 class="text-center h1 my-4">Sydney</h2>
+        <p class="px-5 mb-5 pb-3 lead blue-grey-text text-center">
+          Located on Australia's southeastern coast, Sydney is the country's largest city and, with its magnificent harbour and strategic position, is one of the most important ports in the South Pacific.
+        </p>
+      </div>
+      <div class="row wow fadeInLeft" data-wow-delay=".3s">
+        <div class="col-lg-6 col-xl-5 pr-lg-5 pb-5"><img class="img-fluid rounded z-depth-2" src="sydney.jpeg" alt="project image" /></div>
+        <div class="col-lg-6 col-xl-7 pl-lg-5 pb-4">
+          <div class="row mb-3">
+            <div class="col-1 mr-1"><i class="fa fa-home fa-2x cyan-text"></i></div>
+            <div class="col-10">
+              <h5 class="font-bold">Scheduled Auctions</h5>
+              <p class="grey-text">
+                <div id="sydneyAunction"></div>
+              </p>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-1 mr-1"><i class="fa fa-shopping-cart fa-2x red-text"></i></div>
+            <div class="col-10">
+              <h5 class="font-bold">Number of Properties Sold</h5>
+              <p class="grey-text">
+                <div id="sydneySold"></div>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1 mr-1"><i class="fa fa-building fa-2x deep-purple-text"></i></div>
+            <div class="col-10">
+              <h5 class="font-bold">Medium House Prices</h5>
+              <p class="grey-text">
+                <div id="sydneyMedian"></div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
 
-  <div class="parallax-container">
-  <div class="parallax"><img src="2.jpg"></div>
-</div>
-<div class="section white">
-  <div class="row container">
-    <h2 class="header">Fetch me Real Estate Prices</h2>
-    <button id="testButton">Get House Prices</button>
-    <div id="output"></div>
-  </div>
-</div>
-<div class="parallax-container">
-  <div class="parallax"><img src="3.jpg"></div>
-</div>
-<script>
+  <section>
+    
+  </section>
 
-$(document).ready(function(){
-  $('.parallax').parallax();
-});
-
-</script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
   <script src="app.js" charset="utf-8"></script>
-
 </body>
 
 </html>

@@ -15,7 +15,6 @@ function validatePIN (pin) {
     return(true); else {
       return(false);
     }
-    return(true);
   }
   return(false);
 }

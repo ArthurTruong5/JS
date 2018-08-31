@@ -9,7 +9,7 @@
 function friend(friends){
   console.log(friends.filter(word => word.length == 4));
 }
-//
+
 // function friend(friends) {
 //   console.log(friends.filter(function (word) {
 //     return word.length == 4;
