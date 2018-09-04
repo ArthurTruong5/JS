@@ -4,7 +4,7 @@ var app = express();
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
-    res.send('Hello Express')
+    res.send('Home')
 });
 
 app.listen(process.env.PORT || 3000)
