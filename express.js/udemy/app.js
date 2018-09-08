@@ -31,9 +31,10 @@ app.get('/', function(req, res) {
 app.get('/person/:id', function(req, res) {
 	res.render('person', { ID: req.params.id });
 });
-// app.get('/person/:id', function(req, res) {
-// 	res.send('<html><head></head><body><h1>Person: ' + req.params.id + '</h1></body></html>');
-// });
+// Same thing as aboce
+app.get('/person/:id', function(req, res) {
+	res.send('<html><head></head><body><h1>Person: ' + req.params.id + '</h1></body></html>');
+});
 
 // Sends a JSON response. This method sends a response (with the correct content-type) that is the parameter converted to a JSON string using JSON.stringify().
 app.get('/api', function(req, res) {
